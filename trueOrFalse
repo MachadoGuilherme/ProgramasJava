@@ -1,0 +1,35 @@
+package javaapplication1;
+
+/**
+ *
+ * @author guylh
+ */
+import java.util.Scanner;
+import java.util.Calendar;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        float numA;
+        float numB;
+        float numC;
+        float result;
+        
+        System.out.println("primeiro numero: ");
+        numA=entrada.nextInt();
+        System.out.println("segundo numero: ");
+        numB=entrada.nextInt();
+        
+        System.out.printf("%.2f e maior que: %.2f ? %s\n", numA, numB, numA > numB);
+        System.out.printf("%.2f e maior igual: %.2f ? %s\n", numA, numB, numA >= numB);
+        System.out.printf("%.2f e menor que: %.2f ? %s\n", numA, numB, numA < numB);
+        System.out.printf("%.2f e menor igual: %.2f ? %s\n", numA, numB, numA <= numB);
+        System.out.printf("%.2f e igual que: %.2f ? %s\n", numA, numB, numA == numB);
+        System.out.printf("%.2f e diferente: %.2f ? %s\n", numA, numB, numA != numB);
+        
+    }
+    
+}
