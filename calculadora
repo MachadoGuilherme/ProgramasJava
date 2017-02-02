@@ -1,0 +1,32 @@
+package javaapplication1;
+
+/**
+ *
+ * @author guylh
+ */
+import java.util.Scanner;
+import java.util.Calendar;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        float numA;
+        float numB;
+        
+        System.out.println("primeiro numero: ");
+        numA=entrada.nextInt();
+        System.out.println("segundo numero: ");
+        numB=entrada.nextInt();
+        
+        System.out.println();
+        System.out.printf("\n%.2f + %.2f = %.2f\n", numA, numB, numA+numB);
+        System.out.printf("\n%.2f - %.2f = %.2f\n", numA, numB, numA-numB);
+        System.out.printf("\n%.2f * %.2f = %.2f\n", numA, numB, numA*numB);
+        System.out.printf("\n%.2f / %.2f = %.2f\n", numA, numB, numA/numB);
+        
+    }
+    
+}
