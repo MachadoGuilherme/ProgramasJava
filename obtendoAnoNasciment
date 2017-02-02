@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Calendar;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        int idade;
+        int anoAtual;
+        int anoNasci;
+        
+        System.out.println("Sua idade: ");
+        idade = entrada.nextInt();
+        
+        Calendar calendario = Calendar.getInstance();
+        anoAtual = calendario.get(Calendar.YEAR);
+        anoNasci = anoAtual - idade;
+        
+        System.out.printf("Voce nasceu em " + anoNasci + "\n");
+        
+    }
