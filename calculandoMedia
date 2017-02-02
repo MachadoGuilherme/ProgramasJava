@@ -1,0 +1,33 @@
+package javaapplication1;
+
+/**
+ *
+ * @author guylh
+ */
+import java.util.Scanner;
+import java.util.Calendar;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        float numA;
+        float numB;
+        float numC;
+        float result;
+        
+        System.out.println("primeiro numero: ");
+        numA=entrada.nextInt();
+        System.out.println("segundo numero: ");
+        numB=entrada.nextInt();
+        
+        System.out.println();
+        numC=numA+numB;
+        result=numC/2;
+        System.out.printf("Nota um: %.2f \nNota dois: %.2f \nMedia= %.2f\n", numA, numB, result);
+        
+    }
+    
+}
