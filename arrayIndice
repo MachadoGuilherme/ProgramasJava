@@ -1,0 +1,24 @@
+
+package javaapplication1;
+/**
+ * @author Guilherme
+ */
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        
+        int[] nota=new int[5];
+        Scanner entrada = new Scanner(System.in);
+        
+        for(int indice=0 ; indice <5 ; indice++){
+            System.out.print("Entre com o numero "+ (indice+1)+ ": ");
+            nota[indice]=entrada.nextInt();
+        }
+        for(int indice=0 ; indice <5 ; indice++){
+            System.out.printf("Numero %d -> Valor armazenado: %d\n", indice+1, nota[indice]);
+        }
+    }
+    
+}
